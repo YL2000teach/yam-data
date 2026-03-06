@@ -1,104 +1,209 @@
-body{
-  font-family: Arial;
-  margin:0;
-  background:#f5f5f5;
-  direction:rtl;
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800&display=swap');
+
+body {
+  font-family: 'Heebo', Arial, sans-serif;
+  margin: 0;
+  background: #f5f5f5;
+  direction: rtl;
+  color: #333c42;
+  line-height: 1.8;
 }
 
-.banner{
-  background:#456673;
-  text-align:center;
-  padding:20px;
+.banner {
+  background: #365b6d;
+  text-align: center;
+  padding: 28px 20px;
 }
 
-.logo{
-  max-width:500px;
+.logo {
+  width: min(420px, 80%);
+  height: auto;
+  display: inline-block;
 }
 
-.menu{
-  text-align:center;
-  background:white;
-  padding:15px;
-  border-bottom:1px solid #ddd;
+.menu {
+  text-align: center;
+  background: #ffffff;
+  padding: 16px 12px;
+  border-bottom: 1px solid #e3e3e3;
 }
 
-.menu a{
-  margin:15px;
-  text-decoration:none;
-  font-weight:bold;
-  color:black;
+.menu a {
+  margin: 0 18px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.05rem;
+  color: #3d464c;
 }
 
-.title{
-  text-align:center;
-  padding:40px;
-  font-size:22px;
+.menu a:hover {
+  color: #365b6d;
 }
 
-.about{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:40px;
-  padding:40px;
-  max-width:1000px;
-  margin:auto;
+.title {
+  text-align: center;
+  padding: 42px 20px 18px;
 }
 
-.about-text{
-  max-width:600px;
+.title h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: #2f383d;
+  line-height: 1.25;
 }
 
-.about-image img{
-  width:250px;
-  border-radius:4px;
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  padding: 28px 24px 40px;
+  max-width: 1150px;
+  margin: 0 auto;
 }
 
-#services{
-  padding:60px;
-  text-align:center;
+.about-text {
+  max-width: 650px;
+  font-size: 1.08rem;
 }
 
-.service-grid{
-  display:grid;
-  grid-template-columns:repeat(2,300px);
-  gap:40px;
-  justify-content:center;
-  margin-top:40px;
+.about-text h3 {
+  font-size: 1.5rem;
+  margin: 0 0 14px;
+  color: #2f383d;
 }
 
-.service-card{
-  background:#eeeeee;
-  border:2px solid #456673;
-  padding:25px;
+.about-text p {
+  margin: 0 0 22px;
 }
 
-.contact{
-  text-align:center;
-  background:#ddd;
-  padding:30px;
-  margin-top:50px;
+.about-image img {
+  width: 280px;
+  max-width: 100%;
+  border-radius: 14px;
+  display: block;
 }
 
-.workshop-grid{
-  display:flex;
-  justify-content:center;
-  gap:40px;
-  padding:60px;
-  flex-wrap:wrap;
+#services {
+  padding: 34px 24px 70px;
+  text-align: center;
 }
 
-.workshop-card{
-  text-align:center;
-  max-width:300px;
+#services h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.7rem);
+  margin: 0 0 34px;
+  color: #2f383d;
 }
 
-.workshop-card img{
-  width:100%;
-  border-radius:6px;
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 320px));
+  gap: 26px;
+  justify-content: center;
 }
 
-.page-title{
-  text-align:center;
-  margin-top:40px;
+.service-card {
+  background: #ececec;
+  border: 2px solid #365b6d;
+  border-radius: 18px;
+  padding: 24px 22px;
+  min-height: 170px;
+  box-sizing: border-box;
+}
+
+.service-card h3 {
+  margin: 0 0 14px;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #2f383d;
+  line-height: 1.35;
+}
+
+.service-card p {
+  margin: 0;
+  font-size: 1rem;
+  color: #4b555c;
+  line-height: 1.7;
+}
+
+.contact {
+  text-align: center;
+  background: #e6e6e6;
+  padding: 34px 20px 42px;
+  margin-top: 10px;
+}
+
+.contact h3 {
+  margin: 0 0 14px;
+  font-size: 1.4rem;
+  color: #2f383d;
+}
+
+.contact p {
+  margin: 8px 0;
+  font-size: 1.02rem;
+}
+
+.contact a {
+  color: #365b6d;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.page-title {
+  text-align: center;
+  margin: 42px 20px 10px;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: #2f383d;
+}
+
+.workshop-grid {
+  display: flex;
+  justify-content: center;
+  gap: 34px;
+  padding: 34px 24px 70px;
+  flex-wrap: wrap;
+}
+
+.workshop-card {
+  text-align: center;
+  max-width: 320px;
+}
+
+.workshop-card img {
+  width: 100%;
+  border-radius: 16px;
+  display: block;
+}
+
+.workshop-card h3 {
+  margin: 14px 0 0;
+  font-size: 1.3rem;
+  color: #2f383d;
+}
+
+@media (max-width: 900px) {
+  .about {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 28px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    min-height: auto;
+  }
+
+  .menu a {
+    margin: 0 10px;
+    font-size: 1rem;
+  }
 }
